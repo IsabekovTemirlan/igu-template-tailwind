@@ -1,0 +1,27 @@
+a, li {
+  cursor: pointer !important;
+}
+
+.header-bg {
+  background-image: url(./assets/placeholders/pictures/header.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+
+.header-logo {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -5px;
+  left: 44%;
+  border: 10px solid #f7fafc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.previousButton > svg > polygon, .nextButton > svg > polygon {
+  fill: #fff;
+  cursor: pointer;
+}
