@@ -124,7 +124,6 @@ export default function() {
         setcurentPortionId(state => state -= 1)
       }
     }
-    console.log(curentPortionId)
     
     if (id < newsTotal && id >= 0) {
       setcurentPortionId(id)
@@ -138,7 +137,7 @@ export default function() {
       <div className="flex flex-wrap -mx-4">
         <NewsCard news={portion[curentPortionId]} />
       </div>
-      <Paginator total={newsTotal} onNewsChange={onNewsChange} />
+      <Paginator total={newsTotal} onNewsChange={onNewsChange} currentId={curentPortionId} />
     </section>
   )
 }
