@@ -17,7 +17,7 @@ export default function ({ total, onNewsChange, currentId }) {
 
         {totalArr.map((_, id) => <li key={id} onClick={() => onNewsChange(id)}>
           <button 
-            className="block px-3 py-2 text-blue-700 hover:text-white hover:bg-indigo-500 border-r border-grey-light"
+            className={`${currentId === id && 'text-white bg-blue-500 '} block px-3 py-2  hover:text-blue-700 hover:bg-indigo-100 border-r border-grey-light`}
           >{id + 1}</button>
         </li>)}
 
