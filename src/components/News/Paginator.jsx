@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function ({ total, onNewsChange, currentId }) {
   const disabled = "opacity-50 cursor-not-allowed"
   
